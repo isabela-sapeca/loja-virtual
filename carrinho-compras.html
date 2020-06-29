@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>E-commerce</title>
+
+        <link rel="stylesheet" href="bulma-0.8.0\css\bulma.css">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="carrinho-compras.css">
+
+        <style>
+            #conteudo {
+	            flex: 1;
+	            display: flex;
+            }
+            #subtotal {
+                padding: 30px;
+            }
+            #frete {
+                padding: 0;
+            }
+        </style>
+
+
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </head>
+
+    <body>
+        <nav class="level">
+            <div class="level-left">
+                <div class="level-item padding-20">
+                    <figure class="image is-128x128">
+                        <img src="images/logo.png">
+                    </figure>
+                </div>  
+                <div class="level-item padding-20">
+                    <div class="level-item has-text-centered">
+                        <div>
+                          <p class="heading">Promoções</p>
+                          <p class="title">15</p>
+                        </div>
+                      </div>
+                </div>  
+                <div class="level-item padding-20">
+                    <div class="level-item has-text-centered">
+                        <div>
+                          <p class="heading">Produtos</p>
+                          <p class="title">789</p>
+                        </div>
+                      </div>
+                </div>  
+                <div class="level-item padding-20">
+                  <div class="level-item has-text-centered">
+                      <div>
+                        <p class="heading">Novidades</p>
+                        <p class="title">45</p>
+                      </div>
+                    </div>
+              </div>  
+            </div>
+            <div class="level-right">
+                
+                <div class="level-item padding-20">
+                    <div class="field has-addons">
+                      <p class="control">
+                        <p class="control has-icons-left">
+                            <input class="input" type="text" placeholder="O que procura ?">
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-search"></i>
+                            </span>
+                          </p>
+                        
+                      </p>
+                      <p class="control">
+                        <button class="button is-info">
+                          Pesquisar
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                <div class="level-item">
+                </div>
+            </div>
+        </nav>
+
+        <div class="columns no-margin-bottom" id="mail-app">
+            <aside class="column is-1 aside hero is-fullheight">
+                <div>
+                    <div class="compose has-text-centered">
+                        <a href="" class="item-lateral">
+                            <span class="icon">
+                                <i class="fas fa-2x fa-home"></i>
+                            </span>
+                        </a>
+                        <a href="" class="item-lateral active">
+                            <span class="icon">
+                                <i class="fas fa-2x fa-shopping-cart"></i>
+                            </span>
+                        </a>
+                        <a href="" class="item-lateral">
+                            <span class="icon">
+                                <i class="fas fa-2x fa-search"></i>
+                            </span>
+                        </a>
+                        <a href="" class="item-lateral">
+                            <span class="icon">
+                                <i class="fas fa-2x fa-sitemap"></i>
+                            </span>
+                        </a>
+                        <a href="" class="item-lateral">
+                            <span class="icon">
+                                <i class="fas fa-2x fa-clipboard-list"></i>
+                            </span>
+                        </a>
+                        <a href="" class="item-lateral">
+                            <span class="icon">
+                                <i class="fas fa-2x fa-sign-out-alt"></i>
+                            </span>
+                        </a>
+                    </div>  
+                </div>
+            </aside>
+
+            <aside class="column is-2 aside hero is-fullheight">
+                <div>
+                    <div class="compose has-text-centered">
+                        <span class="tag is-info is-medium">Carrinho de Compras</span>
+                    </div>
+                    <div class="main">
+                        <a href="#" class="item"><span class="icon"><i class="fa fa-star"></i></span><span class="name">Meus Pedidos</span></a>
+
+                        <a href="#" class="item"><span class="icon"><i class="fa fa-envelope"></i></span><span class="name">Desejos</span></a>
+
+                    </div>
+                </div>
+            </aside>
+
+            <aside class="column is-7 aside hero is-fullheight">
+            	
+            	<nav class="breadcrumb" aria-label="breadcrumbs">
+				  <ul>
+				    <li class="is-active"><a href="#" aria-current="page">Carrinho de compras</a></li>
+				  </ul>
+				</nav>
+
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+                        </div>    
+
+                        <div class="column is-3">
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+
+
+
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+
+                        </div>    
+
+                        <div class="column is-3">
+                        	<p class="is-size-6">&nbsp&nbsp&nbsp&nbsp<del class="has-text-danger">R$100,00</del></p>
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+				
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+
+                        </div>    
+
+                        <div class="column is-3">
+                        	<p class="is-size-6">&nbsp&nbsp&nbsp&nbsp<del class="has-text-danger">R$100,00</del></p>
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+				
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+
+                        </div>    
+
+                        <div class="column is-3">
+                        	<p class="is-size-6">&nbsp&nbsp&nbsp&nbsp<del class="has-text-danger">R$100,00</del></p>
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+				
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+
+                        </div>    
+
+                        <div class="column is-3">
+                        	<p class="is-size-6">&nbsp&nbsp&nbsp&nbsp<del class="has-text-danger">R$100,00</del></p>
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+				
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+
+                        </div>    
+
+                        <div class="column is-3">
+                        	<p class="is-size-6">&nbsp&nbsp&nbsp&nbsp<del class="has-text-danger">R$100,00</del></p>
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+				
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+
+                        </div>    
+
+                        <div class="column is-3">
+                        	<p class="is-size-6">&nbsp&nbsp&nbsp&nbsp<del class="has-text-danger">R$100,00</del></p>
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+				
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+
+                        </div>    
+
+                        <div class="column is-3">
+                        	<p class="is-size-6">&nbsp&nbsp&nbsp&nbsp<del class="has-text-danger">R$100,00</del></p>
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+				
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+
+                        </div>    
+
+                        <div class="column is-3">
+                        	<p class="is-size-6">&nbsp&nbsp&nbsp&nbsp<del class="has-text-danger">R$100,00</del></p>
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+				
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+
+                        </div>    
+
+                        <div class="column is-3">
+                        	<p class="is-size-6">&nbsp&nbsp&nbsp&nbsp<del class="has-text-danger">R$100,00</del></p>
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+				
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+
+                        </div>    
+
+                        <div class="column is-3">
+                        	<p class="is-size-6">&nbsp&nbsp&nbsp&nbsp<del class="has-text-danger">R$100,00</del></p>
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+				
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+
+                        </div>    
+
+                        <div class="column is-3">
+                        	<p class="is-size-6">&nbsp&nbsp&nbsp&nbsp<del class="has-text-danger">R$100,00</del></p>
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+				
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+
+                        </div>    
+
+                        <div class="column is-3">
+                        	<p class="is-size-6">&nbsp&nbsp&nbsp&nbsp<del class="has-text-danger">R$100,00</del></p>
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+				
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+
+                        </div>    
+
+                        <div class="column is-3">
+                        	<p class="is-size-6">&nbsp&nbsp&nbsp&nbsp<del class="has-text-danger">R$100,00</del></p>
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+				
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+
+                        </div>    
+
+                        <div class="column is-3">
+                        	<p class="is-size-6">&nbsp&nbsp&nbsp&nbsp<del class="has-text-danger">R$100,00</del></p>
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+				
+				<div class="box pt">
+					<div class="columns is-vcentered">
+	                        <div class="column is-3">
+	                            <div class="media-left">
+	                                <figure class="image is-128x128">
+	                                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+	                                </figure>
+	                            </div>
+	                        </div>
+
+	                    <div class="column is-5">
+                           <p class="is-size-5"><strong>Nome do Produto</strong></p> 
+                           <p class="is-size-6">Nome do Fornecedor</p>
+
+                        </div>    
+
+                        <div class="column is-3">
+                        	<p class="is-size-6">&nbsp&nbsp&nbsp&nbsp<del class="has-text-danger">R$100,00</del></p>
+                            <p class="is-size-5"><strong class="has-text-success">R$<span class="is-size-1">99</span>,99</strong></p>
+                           	<p class="is-size-6">até 101 x R$0,99</p>
+                        </div>
+
+                      	<div class="column is-1 has-text-right"><a class="delete "></a><br><br><br><br><br><br>
+                        </div>
+
+
+					</div>
+
+					<div class="column is-12 has-text-right">
+
+						<div class="select">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>+10</option>
+							</select>
+						</div>
+
+						<button class="button is-primary">
+							<span class="icon is-small">
+							  	<i class="fas fa-envelope"></i>
+							</span>
+							<span>Adicionar aos Desejos</span>
+						</button>
+
+						<button class="button is-info">
+							<span class="icon is-small">
+							  	<i class="fas fa-plus"></i>
+							</span>
+							<span>Mais Informações</span>
+						</button>
+					</div>
+
+				</div>	
+				
+
+            </aside>
+
+            <aside id="subtotal" class="column is-2 aside hero is-fullheight">
+                <p class="title is-size-2">Total</p>
+
+                <br>
+
+                <p class="is-size-5">Produto(s): 2</p>
+                <p title="Número Total de Items" class="is-size-5">Item(ns): 2</p><br>
+                <p class="title is-size-5">Subtotal: R$ 199,98</p>
+
+                <br><br>
+                
+                <p class="is-size-5">Calcular Frete</p>
+                <p class="is-size-6">(Frete de R$ 999,99 fixo para todo Brasil)</p><br>
+                <div id="frete" class="level-item padding-20">
+                    <div class="field has-addons">
+                        <p class="control">
+                            <p class="control has-icons-right">
+                                <input class="input" type="text" placeholder="CEP">
+                            </p>
+                            <p class="control">
+                                <button class="button is-info">
+                                    Calcular
+                                </button>
+                            </p>
+                        </p>
+
+                    </div>
+                </div>
+                <p class="is-size-6">Frete: R$ 999,99</p>
+                <br><br><br><br><br>
+
+
+                <button class="button is-fullwidth is-primary">
+                    <span class="icon is-small">
+                          <i class="fas fa-check"></i>
+                    </span>
+                    <span>Fechar Pedido</span>
+                </button>
+            </aside>
+
+        </div>
+    </body>
+</html>
