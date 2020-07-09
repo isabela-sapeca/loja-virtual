@@ -1,0 +1,53 @@
+@media (min-width:1023px){
+    .navbar-menu{
+        display: none;
+    }
+    .navbar{
+        height: 100px;
+    }
+    .info-shop-desk{
+        display: flex;
+    }
+    .menu-icon{
+        display: flex;
+    }
+    .meusPedidos-container{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .navbar .input{
+        width: 60vw;
+    }
+    #svglogo{
+        
+        height: 10vh;
+    }
+    
+}
+
+@media(max-width:1023px){
+    .info-shop-desk{
+        display: none;
+        z-index: -5;
+        background-color: pink;
+    }
+    .area-cliente{
+        display: none;
+    }
+    .menu-icon{
+        display: none;
+    }
+    #svglogo{
+        height: 2vh;
+    }
+    .navbar .input{
+        width: 200px;
+        
+    }
+    .btnPesquizar{
+        display: none;
+    }
+    #svglogo{
+        height: 8vh;
+    }
+}

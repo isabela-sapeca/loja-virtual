@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./bulma-0.8.2/css/bulma.css">
+  <link rel="stylesheet" href="./css/midia-queris.css">
+  <link rel="stylesheet" href="./css/estilo.css">
+  <script src="https://kit.fontawesome.com/1e2ea1be9e.js" crossorigin="anonymous"></script>
+  <title>E-commerce</title>
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger burger" aria-label="menu"   aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+      <div class="nav-bar-item start">
+        <div>
+          <figure>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="152.949 164.416 117.367 96.85" width="80.367pt" id="svglogo"><g><g><path d=" M 212.67 164.416 C 203.944 164.461 169.432 167.519 165.056 186.936 C 163.619 193.313 167.745 192.835 167.419 193.728 L 257.517 193.902 C 257 193.813 264.314 188.808 254.915 178.7 C 245.839 168.94 225.657 164.349 212.67 164.416 Z  M 208.11 168.084 C 208.115 168.084 208.121 168.084 208.127 168.084 C 208.797 168.084 209.439 168.201 209.913 168.409 C 210.386 168.617 210.653 168.899 210.652 169.193 C 210.653 169.487 210.386 169.769 209.913 169.977 C 209.439 170.185 208.797 170.302 208.127 170.302 C 207.457 170.302 206.814 170.185 206.34 169.977 C 205.866 169.769 205.6 169.487 205.6 169.193 C 205.6 168.584 206.721 168.088 208.11 168.084 L 208.11 168.084 Z  M 219.444 168.119 C 219.45 168.119 219.455 168.119 219.46 168.119 C 219.989 168.119 220.497 168.228 220.871 168.421 C 221.245 168.614 221.455 168.876 221.454 169.149 C 221.454 169.718 220.562 170.179 219.46 170.179 C 218.359 170.179 217.466 169.718 217.466 169.149 C 217.466 168.584 218.349 168.124 219.444 168.119 L 219.444 168.119 Z  M 195.727 168.812 C 196.359 168.812 196.965 168.959 197.412 169.221 C 197.86 169.484 198.111 169.839 198.111 170.21 C 198.111 170.581 197.86 170.937 197.412 171.199 C 196.965 171.462 196.359 171.609 195.727 171.609 C 194.41 171.609 193.343 170.983 193.343 170.21 C 193.343 169.438 194.41 168.812 195.727 168.812 L 195.727 168.812 Z  M 230.129 170.295 C 230.13 170.295 230.13 170.295 230.131 170.295 C 231.476 170.295 232.567 170.846 232.567 171.526 C 232.567 172.205 231.476 172.756 230.131 172.756 C 228.786 172.756 227.696 172.205 227.696 171.526 C 227.696 170.847 228.785 170.296 230.129 170.295 L 230.129 170.295 Z  M 214.056 171.974 C 214.717 171.974 215.35 172.107 215.817 172.343 C 216.284 172.579 216.546 172.9 216.546 173.234 C 216.546 173.568 216.284 173.888 215.817 174.124 C 215.35 174.361 214.717 174.493 214.056 174.493 C 213.396 174.493 212.762 174.361 212.295 174.124 C 211.828 173.888 211.566 173.568 211.566 173.234 C 211.566 172.9 211.828 172.579 212.295 172.343 C 212.762 172.107 213.396 171.974 214.056 171.974 L 214.056 171.974 Z  M 184.476 172.255 C 185.066 172.255 185.633 172.397 186.05 172.651 C 186.468 172.904 186.702 173.248 186.702 173.606 C 186.702 174.352 185.705 174.956 184.476 174.956 C 183.246 174.956 182.25 174.352 182.25 173.606 C 182.25 173.248 182.484 172.904 182.902 172.651 C 183.319 172.397 183.885 172.255 184.476 172.255 L 184.476 172.255 Z  M 204.421 173.406 C 205.64 173.406 206.629 174.015 206.628 174.766 C 206.629 175.517 205.64 176.126 204.421 176.126 C 203.835 176.126 203.274 175.983 202.859 175.728 C 202.445 175.473 202.213 175.127 202.213 174.766 C 202.213 174.405 202.445 174.059 202.859 173.804 C 203.274 173.549 203.835 173.406 204.421 173.406 L 204.421 173.406 Z  M 192.408 174.053 C 192.417 174.052 192.426 174.052 192.435 174.053 C 193.683 174.053 194.695 174.744 194.695 175.596 C 194.695 176.449 193.683 177.14 192.435 177.14 C 191.835 177.14 191.26 176.977 190.836 176.688 C 190.412 176.398 190.174 176.006 190.174 175.596 C 190.174 174.751 191.17 174.062 192.408 174.053 L 192.408 174.053 Z  M 241.155 174.586 C 241.156 174.586 241.157 174.586 241.159 174.586 C 241.749 174.586 242.316 174.732 242.734 174.993 C 243.152 175.253 243.386 175.607 243.386 175.975 C 243.386 176.343 243.152 176.697 242.734 176.957 C 242.316 177.218 241.749 177.364 241.159 177.364 C 239.928 177.364 238.931 176.742 238.931 175.975 C 238.931 175.209 239.926 174.587 241.155 174.586 L 241.155 174.586 Z  M 233.346 175.117 C 233.912 175.117 234.455 175.273 234.855 175.55 C 235.256 175.828 235.481 176.204 235.48 176.596 C 235.48 176.988 235.256 177.365 234.855 177.642 C 234.455 177.919 233.912 178.075 233.346 178.075 C 232.168 178.075 231.212 177.413 231.212 176.596 C 231.212 176.204 231.437 175.828 231.837 175.55 C 232.237 175.273 232.78 175.117 233.346 175.117 L 233.346 175.117 Z  M 223.961 175.267 C 223.975 175.267 223.99 175.267 224.004 175.267 C 225.29 175.267 226.332 175.799 226.332 176.454 C 226.332 176.769 226.087 177.071 225.65 177.294 C 225.214 177.517 224.622 177.642 224.004 177.642 C 223.387 177.642 222.794 177.517 222.358 177.294 C 221.921 177.071 221.676 176.769 221.676 176.454 C 221.676 175.807 222.692 175.279 223.961 175.267 L 223.961 175.267 Z " fill="rgb(54,169,65)"/><path d=" M 167.937 195.486 L 256.651 195.216 L 256.521 201.263 L 167.873 200.63 L 167.937 195.486 Z " fill="rgb(54,169,65)"/><mask id="_mask_i7BKGRhs365q6DOsdCOnuN3aBzxmZuvd" x="-200%" y="-200%" width="400%" height="400%"><rect x="-200%" y="-200%" width="400%" height="400%" style="fill:white;"/><path d=" M 167.525 201.749 C 167.525 201.749 161.977 206.329 164.195 209.072 C 165.986 211.286 164.285 202.039 194.771 206.117 C 212.054 210.311 207.889 212.025 222.599 207.142 C 231.704 204.465 238.599 206.093 245.795 207.132 L 258.294 210.079 C 258.294 210.079 262.781 209.091 258.234 203.897 L 255.808 201.916 L 168.525 201.126 L 167.525 201.749 Z " fill="black" stroke="none"/></mask><path d=" M 167.525 201.749 C 167.525 201.749 161.977 206.329 164.195 209.072 C 165.986 211.286 164.285 202.039 194.771 206.117 C 212.054 210.311 207.889 212.025 222.599 207.142 C 231.704 204.465 238.599 206.093 245.795 207.132 L 258.294 210.079 C 258.294 210.079 262.781 209.091 258.234 203.897 L 255.808 201.916 L 168.525 201.126 L 167.525 201.749 Z " fill="none" mask="url(#_mask_i7BKGRhs365q6DOsdCOnuN3aBzxmZuvd)" vector-effect="non-scaling-stroke" stroke-width="4.342" stroke="rgb(54,169,65)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4"/><path d=" M 167.525 201.749 C 167.525 201.749 161.977 206.329 164.195 209.072 C 165.986 211.286 164.285 202.039 194.771 206.117 C 212.054 210.311 207.889 212.025 222.599 207.142 C 231.704 204.465 238.599 206.093 245.795 207.132 L 258.294 210.079 C 258.294 210.079 262.781 209.091 258.234 203.897 L 255.808 201.916 L 168.525 201.126 L 167.525 201.749 Z " fill="none"/><path d=" M 165.984 212.445 L 166.001 208.867 C 166.001 208.867 177.969 200.351 201.398 207.363 C 217.906 212.304 212.053 207.572 222.745 206.254 C 222.745 206.254 238.825 202.743 258.294 209.752 C 258.231 210.121 257.753 211.616 257.548 213.102 C 257.548 213.102 253.395 214.088 252.378 213.971 C 251.36 213.855 242.059 212.944 239.657 213.354 C 237.255 213.764 218.665 213.51 218.665 213.51 C 218.665 213.51 209.197 213.139 207.823 213.788 C 206.449 214.437 202.873 211.93 200.494 212.293 C 198.115 212.656 193.576 213.875 191.363 213.446 C 189.151 213.018 182.89 212.194 181.042 212.543 C 179.194 212.892 173.464 212.433 172.117 212.719 C 170.769 213.006 167.714 213.398 167.324 213.177 C 166.934 212.955 165.984 212.445 165.984 212.445 L 165.984 212.445 Z " fill="rgb(54,169,65)"/><path d=" M 164.516 219.276 C 164.516 219.276 162.336 226.731 169.402 226.613 C 176.469 226.495 234.125 226.525 234.125 226.525 L 252.726 226.641 C 252.726 226.641 259.848 227.761 259.214 220.106 C 258.982 217.301 259.176 217.867 259.273 217.487 C 259.273 217.487 257.439 218.329 256.308 217.674 C 255.177 217.018 252.62 215.8 251.528 217.166 C 250.436 218.531 248.921 219.537 246.559 217.04 C 244.196 214.544 241.682 217.309 241.682 217.309 C 241.682 217.309 239.272 219.247 236.637 217.267 C 234.003 215.286 231.949 217.865 231.949 217.865 C 231.949 217.865 229.287 220.688 225.392 217.3 C 221.497 213.913 219.456 221.602 213.792 217.13 C 208.127 212.659 209.17 222.717 202.35 216.86 C 197.265 212.493 200.015 222.511 192.093 216.964 C 187.952 214.065 187.657 222.902 182.368 216.958 C 178.63 212.756 179.137 221.605 172.479 216.828 C 169.582 214.749 169.777 218.389 167.766 218.051 C 167.766 218.051 165.822 218.801 165.092 218.422 C 164.362 218.042 164.516 219.276 164.516 219.276 L 164.516 219.276 Z " fill="rgb(54,169,65)"/><mask id="_mask_4IF8ryInbRXHC1Zv5UG1JEYfxZSc9ydc" x="-200%" y="-200%" width="400%" height="400%"><rect x="-200%" y="-200%" width="400%" height="400%" style="fill:white;"/><path d=" M 165.259 211.918 C 165.256 211.917 161.139 211.353 163.709 214.02 C 161.01 213.937 160.781 216.883 163.978 216.607 C 163.978 216.607 161.426 218.508 164.992 219.495 C 168.558 220.482 169.549 218.051 169.549 218.051 C 169.549 218.051 170.743 215.907 173.263 218.322 C 175.782 220.737 179.014 217.347 179.014 217.347 C 179.014 217.347 181.603 215.688 182.829 217.982 C 184.054 220.276 187.236 219.14 187.236 219.14 L 189.424 217.464 C 189.424 217.464 190.944 215.787 193.049 217.756 C 195.153 219.725 197.016 219.408 197.016 219.408 L 199.206 217.791 C 199.206 217.791 200.736 215.994 202.5 217.66 C 204.265 219.326 206.273 220.33 208.624 217.974 C 210.974 215.618 212.348 216.787 213.875 217.719 C 215.402 218.651 217.207 220.286 219.861 218.094 C 222.515 215.903 226.212 218.396 226.212 218.396 C 226.212 218.396 228.604 221.102 232.804 218.206 C 237.004 215.31 237.543 221.289 241.704 217.736 C 245.865 214.183 246.831 221.975 251.29 217.996 C 253.789 215.767 255.157 218.113 255.303 217.714 C 258.727 218.805 257.99 217.542 257.655 216.507 C 260.797 218.295 263.977 215.531 259.171 214.547 C 260.45 215.236 262.668 211.033 257.192 212.121 C 257.192 212.121 249.908 212.836 245.967 212.332 C 242.027 211.828 234.015 212.868 234.015 212.868 C 234.015 212.868 222.11 211.889 220.771 211.729 C 219.432 211.569 210.77 211.477 207.714 212.472 C 204.658 213.466 202.748 211.906 202.748 211.906 C 202.748 211.906 188.209 212.524 185.78 212.237 C 183.352 211.95 180.075 211.33 178.51 211.455 C 176.944 211.579 173.965 211.036 172.031 211.412 C 170.097 211.789 167.878 212.298 167.221 212.064 C 166.564 211.831 165.259 211.918 165.259 211.918 L 165.259 211.918 Z " fill="black" stroke="none"/></mask><path d=" M 165.259 211.918 C 165.256 211.917 161.139 211.353 163.709 214.02 C 161.01 213.937 160.781 216.883 163.978 216.607 C 163.978 216.607 161.426 218.508 164.992 219.495 C 168.558 220.482 169.549 218.051 169.549 218.051 C 169.549 218.051 170.743 215.907 173.263 218.322 C 175.782 220.737 179.014 217.347 179.014 217.347 C 179.014 217.347 181.603 215.688 182.829 217.982 C 184.054 220.276 187.236 219.14 187.236 219.14 L 189.424 217.464 C 189.424 217.464 190.944 215.787 193.049 217.756 C 195.153 219.725 197.016 219.408 197.016 219.408 L 199.206 217.791 C 199.206 217.791 200.736 215.994 202.5 217.66 C 204.265 219.326 206.273 220.33 208.624 217.974 C 210.974 215.618 212.348 216.787 213.875 217.719 C 215.402 218.651 217.207 220.286 219.861 218.094 C 222.515 215.903 226.212 218.396 226.212 218.396 C 226.212 218.396 228.604 221.102 232.804 218.206 C 237.004 215.31 237.543 221.289 241.704 217.736 C 245.865 214.183 246.831 221.975 251.29 217.996 C 253.789 215.767 255.157 218.113 255.303 217.714 C 258.727 218.805 257.99 217.542 257.655 216.507 C 260.797 218.295 263.977 215.531 259.171 214.547 C 260.45 215.236 262.668 211.033 257.192 212.121 C 257.192 212.121 249.908 212.836 245.967 212.332 C 242.027 211.828 234.015 212.868 234.015 212.868 C 234.015 212.868 222.11 211.889 220.771 211.729 C 219.432 211.569 210.77 211.477 207.714 212.472 C 204.658 213.466 202.748 211.906 202.748 211.906 C 202.748 211.906 188.209 212.524 185.78 212.237 C 183.352 211.95 180.075 211.33 178.51 211.455 C 176.944 211.579 173.965 211.036 172.031 211.412 C 170.097 211.789 167.878 212.298 167.221 212.064 C 166.564 211.831 165.259 211.918 165.259 211.918 L 165.259 211.918 Z " fill="none" mask="url(#_mask_4IF8ryInbRXHC1Zv5UG1JEYfxZSc9ydc)" vector-effect="non-scaling-stroke" stroke-width="4.342" stroke="rgb(54,169,65)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4"/><path d=" M 165.259 211.918 C 165.256 211.917 161.139 211.353 163.709 214.02 C 161.01 213.937 160.781 216.883 163.978 216.607 C 163.978 216.607 161.426 218.508 164.992 219.495 C 168.558 220.482 169.549 218.051 169.549 218.051 C 169.549 218.051 170.743 215.907 173.263 218.322 C 175.782 220.737 179.014 217.347 179.014 217.347 C 179.014 217.347 181.603 215.688 182.829 217.982 C 184.054 220.276 187.236 219.14 187.236 219.14 L 189.424 217.464 C 189.424 217.464 190.944 215.787 193.049 217.756 C 195.153 219.725 197.016 219.408 197.016 219.408 L 199.206 217.791 C 199.206 217.791 200.736 215.994 202.5 217.66 C 204.265 219.326 206.273 220.33 208.624 217.974 C 210.974 215.618 212.348 216.787 213.875 217.719 C 215.402 218.651 217.207 220.286 219.861 218.094 C 222.515 215.903 226.212 218.396 226.212 218.396 C 226.212 218.396 228.604 221.102 232.804 218.206 C 237.004 215.31 237.543 221.289 241.704 217.736 C 245.865 214.183 246.831 221.975 251.29 217.996 C 253.789 215.767 255.157 218.113 255.303 217.714 C 258.727 218.805 257.99 217.542 257.655 216.507 C 260.797 218.295 263.977 215.531 259.171 214.547 C 260.45 215.236 262.668 211.033 257.192 212.121 C 257.192 212.121 249.908 212.836 245.967 212.332 C 242.027 211.828 234.015 212.868 234.015 212.868 C 234.015 212.868 222.11 211.889 220.771 211.729 C 219.432 211.569 210.77 211.477 207.714 212.472 C 204.658 213.466 202.748 211.906 202.748 211.906 C 202.748 211.906 188.209 212.524 185.78 212.237 C 183.352 211.95 180.075 211.33 178.51 211.455 C 176.944 211.579 173.965 211.036 172.031 211.412 C 170.097 211.789 167.878 212.298 167.221 212.064 C 166.564 211.831 165.259 211.918 165.259 211.918 L 165.259 211.918 Z " fill="none"/></g><text transform="matrix(0.674,0,0,0.618,165.145,253.7)" style="font-family:'Roboto Mono';font-weight:700;font-size:45.2px;font-style:normal;font-variant-ligatures:none;fill:#36A941;stroke:none;">ETELG</text></g></svg>
+          </figure>
+        </div>
+        <div class= "info-shop-desk">
+          <div class="info-shop-item">
+              <p class="sub">promoções</p>
+              <h3 class="titulo">15</h3>
+            </div>
+            <div class="info-shop-item">
+              <p class="sub">produtos</p>
+              <h3 class="titulo">789</h3>
+            </div>
+            <div class="info-shop-item">
+              <p class="sub">novidades</p>
+              <h3 class="titulo">45</h3>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-item busca">
+          <input class="input" type="search" placeholder="O que você procura?">
+          <button class="button btnPesquizar">Pesquizar</button>
+        </div>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+        <a class="navbar-item info-shop-container">
+          <div class="info-shop-item">
+            <p class="sub">promoções</p>
+            <h3 class="titulo">15</h3>
+          </div>
+          <div class="info-shop-item">
+            <p class="sub">produtos</p>
+            <h3 class="titulo">789</h3>
+          </div>
+          <div class="info-shop-item">
+            <p class="sub">novidades</p>
+            <h3 class="titulo">45</h3>
+          </div>
+        </a>
+        <div class="menu-shop-container">
+          <div class="menu-shop-icons">
+            <a class="navbar-item">
+              <i class="fas fa-home"></i>
+            </a>
+            <a class="navbar-item">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <a class="navbar-item">
+              <i class="fas fa-search"></i>
+            </a>
+            <a class="navbar-item">
+              <i class="fas fa-sitemap"></i>
+            </a>
+            <a class="navbar-item">
+              <i class="fas fa-list"></i>
+            </a>
+            <a class="navbar-item">
+              <i class="fas fa-sign-out-alt"></i>
+            </a>
+          </div>
+          <div class="menu-areaCliente">
+            <h3>Area do Cliente</h3>
+            <ul>
+              <li class="menu-areaCliente-item">
+                <a href="">
+                  <p>
+                    <span>
+                      <i class="fas fa-user-circle"></i>
+                    </span>
+                    Meus Dados
+                  </p>
+                </a>
+              </li>
+              <li class="menu-areaCliente-item is-active">
+                <a href="">
+                  <p>
+                    <span>
+                      <i class="fas fa-star"></i>
+                    </span>
+                    Meus Pedidos
+                  </p>
+                </a>
+              </li>
+              <li class="menu-areaCliente-item">
+                <a href="">
+                  <p>
+                    <span>
+                      <i class="fas fa-heart"></i>
+                    </span>
+                    Meus Desejos
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+
+  <section class="main-container columns">
+    <div class="column is-1 menu-icon">
+        <a href="" class="item-lateral active">
+          <span class="icon">
+              <i class="fas fa-2x fa-home"></i>
+          </span>
+      </a>
+      <a href="" class="item-lateral">
+          <span class="icon">
+              <i class="fas fa-2x fa-shopping-cart"></i>
+          </span>
+      </a>
+      <a href="" class="item-lateral">
+          <span class="icon">
+              <i class="fas fa-2x fa-search"></i>
+          </span>
+      </a>
+      <a href="" class="item-lateral">
+          <span class="icon">
+              <i class="fas fa-2x fa-sitemap"></i>
+          </span>
+      </a>
+      <a href="" class="item-lateral">
+          <span class="icon">
+              <i class="fas fa-2x fa-clipboard-list"></i>
+          </span>
+      </a>
+      <a href="" class="item-lateral">
+          <span class="icon">
+              <i class="fas fa-2x fa-sign-out-alt"></i>
+          </span>
+      </a>
+    </div>  
+          
+      </aside>
+      <div class="area-cliente is-2 column">
+        <aside class="menu-area-cliente titulo-area-cliente">
+              <div class="has-text-centered">
+                  <span class="is-info is-mediumn">Área do Cliente</span>
+              </div>
+              <div class="main">
+                  <a href="#" class="item">
+                    <span class="icon"><i class="fa fa-inbox"></i>
+                    </span><span class="name"> Meus Dados</span>
+                  </a>
+                  <a href="#" class="item active">
+                    <span class="icon">
+                      <i class="fa fa-star"></i>
+                    </span>
+                    <span class="name">
+                      Meus Pedidos
+                    </span>
+                  </a>
+                  <a href="#" class="item">
+                    <span class="icon">
+                      <i class="fa fa-envelope"></i>
+                    </span><span class="name">
+                      Desejos
+                    </span>
+                  </a>
+              </div>
+      </aside>
+      </div>
+    <section class="meusPedidos-container column">
+      <header>
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Area do Cliente</a></li>
+            <li class="is-active"><a href="#">Meus Pedidos</a></li>
+          </ul>
+        </nav>
+        <h2 class="is-size-4">Meus Pedidos</h2>
+        <div class="tabs">
+          <ul>
+            <li class="is-active"><a>Todos</a></li>
+            <li><a>Em aberto</a></li>
+            <li><a>Cancelados</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="filter-conteiner">
+        <span>
+          3 pedidos feitos em
+        </span>
+        <div class="dropdown" id="drop-filtro">
+          <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+              <span>ultimos 30 dias <i class="fas fa-sort-down"></i></span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item">
+                Ultimos 6 meses
+              </a>
+              <a class="dropdown-item">
+                2020
+              </a>
+              <a href="#" class="dropdown-item">
+                2019
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card pedido-container">
+        <div class="card-header">
+          <div class="pedido-data">
+            <p class="subtitle is-7">Pedido realizado</p>
+            <p class="title is-6">99/99/9999</p>
+          </div>
+          <div class="pedido-total">
+            <p class="subtitle ">Total</p>
+            <p class="title is-6">R$1.000,00</p>
+          </div>
+          <div class="pedido-cod">
+            <p class="subtitle ">Pedido: nº123456789</p>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image">
+                <img src="./img/x-salada.png" alt="foto do produto">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title">x-salada</p>
+              <p class="subtitle is-7">50 unidades</p>
+              <p class="subtitle preco">R$ 20,00</p>
+            </div>
+            <button class="button modal-button" id="btnModal">
+              Detalhes
+            </button>
+            <div class="modal" id="modal-prod">
+              <div class="modal-background" id="backModalClose"></div>
+              <div class="modal-content">
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">Pedido Nº123456789</p>
+                    <button class="delete" id="btnModalClose" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                      <div class="formPag-container">
+                        <p class="sub">Pagamento</p>
+                        <h3 class="title">
+                          <i class="fas fa-barcode"></i>
+                          boleto
+                        </h3>
+                      </div>
+                      <div class="totalPag-container">
+                        <p class="sub">Total pago</p>
+                        <div>
+                          <div class="totaPag-item">
+                            <p>
+                              Subtotal
+                            </p>
+                            <p>
+                              R$1.000,00
+                            </p>
+                          </div>
+                          <div class="totaPag-item">
+                            <p>
+                              Desconto
+                            </p>
+                            <p>
+                              R$0,00
+                            </p>
+                          </div>
+                          <div class="totaPag-item">
+                            <p>
+                              Frete
+                            </p>
+                            <p>
+                              R$10,00
+                            </p>
+                          </div>
+                          <hr class="totalPag-hr" />
+                          <div class="totaPag-item total">
+                            <p>Total</p>
+                            <p>R$1.010,00</p>
+                          </div>
+                        </div>
+                        <div class="end-container">
+                          <p class="sub">Endereço</p>
+                          <h3 class="title">
+                            Usuario
+                          </h3>
+                          <p>Rua Aplha, 100</p>
+                          <p>Bairro Beta - Cidade X- UF</p>
+                          <p>CEP:0000000</p>
+                        </div>
+                        <hr class="section-hr">
+                        <div class="unidade-prod">
+                          <p>50 itens</p>
+                        </div>
+                        <div class="card-content pedido-1">
+                          <div class="media">
+                            <div class="media-left">
+                              <figure class="image imgProd" >
+                                <img src="./img/x-salada.png" alt="foto do produto">
+                              </figure>
+                              <p class="subtitle preco">R$ 20,00</p>
+                              
+                            </div>
+                            <div class="media-content">
+                              <p class="title">x-salada</p>
+                              <p class="subtitle is-7">50 unidades</p>
+                              
+                            </div>
+                            </div>
+                            <div class="card-footer">
+                              <div class="card-footer-item">
+                                <button class="button is-primary">
+                                  teste
+                                </button>
+                              </div>
+                              <div class="card-footer-item">
+                                <button class="button is-primary">
+                                  teste
+                                </button>
+                              </div>
+                              <div class="card-footer-item">
+                                <button class="button is-primary">
+                                  teste
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card pedido-container">
+          <div class="card-header">
+            <div class="pedido-data">
+              <p class="subtitle is-7">Pedido realizado</p>
+              <p class="title is-6">99/99/9999</p>
+            </div>
+            <div class="pedido-total">
+              <p class="subtitle ">Total</p>
+              <p class="title is-6">R$1.000,00</p>
+            </div>
+            <div class="pedido-cod">
+              <p class="subtitle ">Pedido: nº123456789</p>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image">
+                  <img src="./img/x-salada.png" alt="foto do produto">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title">x-salada</p>
+                <p class="subtitle is-7">50 unidades</p>
+                <p class="subtitle preco">R$ 20,00</p>
+              </div>
+              <button class="button">
+                Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card pedido-container">
+          <div class="card-header">
+            <div class="pedido-data">
+              <p class="subtitle is-7">Pedido realizado</p>
+              <p class="title is-6">99/99/9999</p>
+            </div>
+            <div class="pedido-total">
+              <p class="subtitle ">Total</p>
+              <p class="title is-6">R$1.000,00</p>
+            </div>
+            <div class="pedido-cod">
+              <p class="subtitle ">Pedido: nº123456789</p>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image">
+                  <img src="./img/x-salada.png" alt="foto do produto">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title">x-salada</p>
+                <p class="subtitle is-7">50 unidades</p>
+                <p class="subtitle preco">R$ 20,00</p>
+              </div>
+              <button class="button">
+                Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #F3F3F3;
+    color:#333;
+    font-size: 16px;
+    height: 100vh;
+}
+a{
+    color: #36A941;
+    transition:color .3s;
+}
+a:hover{
+    color: #999;
+}
+.logo{
+    margin-left: 5%;
+}
+.navbar{
+    border-bottom: 2px solid #ddd;;
+}
+
+.navbar-burger{
+    color: #333;
+    
+}
+
+.navbar .input{
+    
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 5px;
+    font-family: 'Comfortaa', sans-serif;
+    max-width:270px;
+    min-width: 183px;
+
+}
+.navbar .input::placeholder{
+    color: #333;
+}
+.breadcrumb{
+    padding-top: 2vh;
+    font-size: 0.8em;
+    
+}
+
+.meusPedidos-container h2, .meusPedidos-container .breadcrumb{
+    padding-left: 1.5vh;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.filter-conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+.filter-conteiner span{
+    padding-right: 10px;
+}
+.pedido-container{
+    margin-top: 2.5vh;
+    margin-left: 1.5vh;
+    margin-right: 1.5vh;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+.card-header{
+    padding-top: 0.8em;
+    padding-left: 0.8em;
+    padding-bottom: .8em;
+    justify-content: space-around;
+    
+}
+.card-header .subtitle{
+    color: #333;
+    font-size: .7em;
+    text-transform: uppercase;
+}
+
+.card-header > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.media-content{
+    padding-right: 10px;
+}
+.media-content .title, .media-content .preco{
+ font-size: 1em;
+}
+
+.media button{
+    background-color: #36A941;
+    color: #fff;
+
+}
+.info-shop-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    
+}
+
+.info-shop-item{
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-shop-item .sub{
+    font-size: .8em;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.info-shop-item .titulo{
+    font-size: 1.5em;
+    color: #333;
+    font-weight: 700;
+}
+
+.menu-shop-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+}
+.menu-shop-icons{
+    height: 100%;
+    border-right: 2px solid #bbb;
+    margin-right: 5px;
+}
+.menu-shop-icons .navbar-item{ 
+    color: #36A941;
+    padding-bottom: 2em;
+    font-size: 1.5em;
+}
+
+.menu-areaCliente{
+    width: 100%;
+}
+
+.menu-areaCliente h3{
+    font-size: .8em;
+    color: #999;
+}
+
+.menu-areaCliente li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5em;
+    margin-bottom: 2vh;
+    font-size: 1.5em;
+}
+.menu-areaCliente p{
+    color:#36A941; 
+    
+}
+
+.menu-areaCliente-item.is-active{
+    background-color: #ddd;
+    color: #fff;
+}
+
+.formPag-container .sub{
+    font-size: .8em;
+}
+
+.formPag-container .title , .end-container .title{
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+.totalPag-container{
+    margin-top: 2vh;
+}
+.totalPag-container .sub, .end-container .sub{
+    font-size: .8em;
+}
+
+.totaPag-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 768px;
+}
+.totaPag-item p{
+    font-size: 1.2em;
+}
+.totalPag-hr{
+    background-color: #333;
+    height: 3px;
+}
+.total p{ 
+    font-weight: 700;
+}
+
+.end-container{
+    margin-top: 2vh;
+}
+
+.section-hr{
+    background-color: #999;
+    height: 2px;
+    
+}
+
+.modal-card-body{
+    background-color: #ebebeb;
+}
+
+.unidade-prod {
+    display: flex;
+    justify-content: center;
+}
+
+.pedido-1{
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+}
+
+.imgProd{
+    width: 80px;
+  
+}
+
+.btnPesquizar{
+    background-color: #36A941;
+    color:#fff;
+}
+
+.info-shop-desk{
+    justify-content: space-between;
+    width: 25vw;
+    margin-left: 2em;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+#svglogo{
+    margin-top: 6px;
+}
+
+.navbar-brand{
+    width: 100%;
+    justify-content: space-between;
+}
+.navbar-brand .start{
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon{
+    
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 700px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.menu-area-cliente .main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 50vh;
+    margin-top:15px;
+}
+.main .item{
+    width: 100%;
+    padding: 15px;
+    font-size: 1.3em;
+    transition: background-color .3s;
+    margin-bottom: 5px;
+}
+.main .item:hover,.main .item.active{
+    background-color: #36A941;
+    color:#fff;
+}
+.area-cliente {
+    border-right: 2px solid #ddd;
+}
+.main .item.active:hover{
+    opacity: .8;
+}
+.titulo-area-cliente {
+    margin-top: 15px;
+    color: #999;
+}
+
+
+.bgc-pink{
+    background-color: pink;
+}
