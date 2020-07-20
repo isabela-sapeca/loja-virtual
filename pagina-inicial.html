@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>E-commerce</title>
+        <link rel="stylesheet" href="bulma-0.8.0\css\bulma.css">
+        <link rel="stylesheet" href="estilo.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body onload="mudar()">
+        <nav class="level">
+            <div class="level-left">
+                <div class="level-item padding-20">
+                    <figure class="image is-128x128">
+                        <img src="images/logo.png">
+                    </figure>
+                </div>  
+                <div class="level-item padding-20">
+                    <div class="level-item has-text-centered">
+                        <div>
+                          <p class="heading">Promoções</p>
+                          <p class="title">15</p>
+                        </div>
+                      </div>
+                </div>  
+                <div class="level-item padding-20">
+                    <div class="level-item has-text-centered">
+                        <div>
+                          <p class="heading">Produtos</p>
+                          <p class="title">789</p>
+                        </div>
+                      </div>
+                </div>  
+                <div class="level-item padding-20">
+                  <div class="level-item has-text-centered">
+                      <div>
+                        <p class="heading">Novidades</p>
+                        <p class="title">45</p>
+                      </div>
+                    </div>
+              </div>  
+            </div>
+            <div class="level-right">
+                
+                <div class="level-item padding-20">
+                    <div class="field has-addons">
+                      <p class="control">
+                        <p class="control has-icons-left">
+                            <input class="input" type="text" placeholder="O que procura ?">
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-search"></i>
+                            </span>
+                          </p>
+                        
+                      </p>
+                      <p class="control">
+                        <button class="button is-info">
+                          Pesquisar
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                <div class="level-item">
+                </div>
+            </div>
+        </nav>
+        <div class="columns no-margin-bottom" id="mail-app">
+            <aside class="column is-1 aside hero is-fullheight">
+                <div>
+                    <div class="compose has-text-centered">
+                        <a href="" class="item-lateral active">
+                            <span class="icon">
+                                <i class="fas fa-2x fa-home"></i>
+                            </span>
+                        </a>
+                        <a href="" class="item-lateral">
+                            <span class="icon">
+                                <i class="fas fa-2x fa-shopping-cart"></i>
+                            </span>
+                        </a>
+                        <a href="" class="item-lateral">
+                            <span class="icon">
+                                <i class="fas fa-2x fa-search"></i>
+                            </span>
+                        </a>
+                        <a href="" class="item-lateral">
+                            <span class="icon">
+                                <i class="fas fa-2x fa-sitemap"></i>
+                            </span>
+                        </a>
+                        <a href="" class="item-lateral">
+                            <span class="icon">
+                                <i class="fas fa-2x fa-clipboard-list"></i>
+                            </span>
+                        </a>
+                        <a href="" class="item-lateral">
+                            <span class="icon">
+                                <i class="fas fa-2x fa-sign-out-alt"></i>
+                            </span>
+                        </a>
+                    </div>  
+                </div>
+            </aside>
+            
+            <div class="column is-12 messages hero is-fullheight" id="message-feed">
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                    </ul>
+                </nav>
+
+                    <div>
+                        <form name="imagem">
+                                <img src="images/imagem1.png" name=foto>
+                        </form>
+ 
+                        <script>
+
+                            var i = 0;
+                            string = "Hello World";
+
+                            function mudar()
+                            { 
+                                i++;
+                                if (i==1)
+                                {imagem.foto.src="images/imagem1.png";
+                                    }
+
+                                if (i==2)
+                                {imagem.foto.src="images/banner1.jpg";
+                                }
+
+                                if (i==3)
+                                {imagem.foto.src="images/acompanhamento.jpg";
+                                }
+                                
+                                if (i==4)
+                                {imagem.foto.src="images/Shakes_Banner.jpg";
+                                    i=0;}
+
+                                setTimeout("mudar()", 1900);
+                            }
+
+                            
+                        </script>       
+                    </div>
+                    
+                        <div class="columns is-centered; coluna">
+                            <div class="column is-4">
+                            <figure class="image">
+                                    <img class="is-rounded" src="images/chefe.jpg">
+                                </figure>
+                            <div class="column">
+                            <h4 class="subtitle is-4, texto-imagem" >Chefe</h4>
+                                    <h3 class="title is-3, texto-imagem">Nome do chefe</h3>
+                            </div>
+                            </div>
+                            
+                            <div class="column is-8">
+                                
+                                <h2 class="title is-2">Title 2</h2>
+
+                                    <h3 class="subtitle is-3">Lorem ipsum dolor sit amet</h3>
+
+                                <p>
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <br>
+                                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore <br>
+                                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Consequuntur <br>
+                                    magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam <br>
+                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit <br>
+                                    aliquid ex ea commodi consequatur? laboriosam, nisi ut est, qui dolorem ipsum <br>
+                                    quia dolor sit amet, but I must explain to you how all this mistaken idea of<br>
+                                    denouncing pleasure and praising pain was born and I will give you a complete <br>
+                                    account of the system,and expound the actual teachings of the great explorer of <br>
+                                    the truth, the master-builder of human happiness. No one rejects, dislikes, or <br>
+                                    avoids pleasure itself, Excepteur sint occaecat cupidatat non proident, sunt <br>
+                                    in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                    <div class="column is-2">
+                                        <img class="imagem" src="images/Burguer.jpg" >
+                    
+                                    </div>
+                                <div class="column is-6">
+                                    
+                                    <h4 class="texto2"  >Ut enim ad minima veniam, quis nostrum exercitationem  ullam corporis<br>
+                                     suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? <br>
+                                    </h4>
+
+                                    <img class="imagem" src="images/Gourmet.jpg" >
+                                    
+                                    <h4 class="texto2"  >Ut enim ad minima veniam, quis nostrum exercitationem  ullam corporis<br>
+                                     suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? <br>
+                                    </h4>
+
+                                    <img class="imagem" src="images/lambreta.png" >
+
+                                    <h4 class="texto2"  >Ut enim ad minima veniam, quis nostrum exercitationem  ullam corporis<br>
+                                     suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? <br>
+                                    </h4>
+
+                                <div class="columns" style="padding-top: 90px; padding-bottom: 150px;">
+                                <div class="columns is-mobile">
+                                <div class="column">
+                                    <p class="bd-notification is-info"><img class="image is-48x48" src="images/facebook.png" ></p>
+                                
+                                </div>
+                                 <div class="column">
+                                    <p class="bd-notification is-info"><img class="image is-48x48" src="images/imagens (2).png" ></p>
+                                </div>
+                                <div class="column">
+                                    <p class="bd-notification is-info"><img class="image is-48x48" src="images/Imagem2.png" ></p>
+                                </div>
+                                </div>
+                                
+
+
+
+
+                                 
+                                    
+                        </div>
+
+                </div>
+                        
+                        
+                        
+
+                        
+        
+   </div>
+        
+    </div>
+        <script src="../js/bulma.js"></script>
+    </body>
+</html>
